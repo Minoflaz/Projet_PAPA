@@ -26,7 +26,7 @@ $(document).ready(function()
     //Actualisation de la liste en fonction de se qui est dans la barre de recherche y compris quand elle est vide
     function actuListe () {
         
-        $.get('http://localhost/TP_JS/suggestions.php',
+        $.get('localhost:8000/Projet_PAPA/suggestaaaions.php',
                 {mot: $('#recherche').val()},
                 function (reponse) {
                     console.log("Réponse reçue du serveur: ", reponse);

@@ -1,4 +1,4 @@
-console.log("Ce programme JS vient d'être chargé");
+﻿console.log("Ce programme JS vient d'être chargé");
 $(document).ready(function()
 {
     //Affichage initial de la liste
@@ -26,7 +26,7 @@ $(document).ready(function()
     //Actualisation de la liste en fonction de se qui est dans la barre de recherche y compris quand elle est vide
     function actuListe () {
         
-        $.get('http://localhost/Projet_PAPA/suggestions.php',
+        $.get('http://localhost:8000/Projet_PAPA/suggestions.php',
                 {mot: $('#recherche').val()},
                 function (reponse) {
                     console.log("Réponse reçue du serveur: ", reponse);
