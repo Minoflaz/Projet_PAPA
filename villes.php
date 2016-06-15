@@ -21,12 +21,12 @@ class Villes {
 
 			if($nom == "") {
 
-				$matching[] = $ville->Ville->getName();
+				$matching[] = $ville;
 			}
 
-			else if (preg_match('/'.preg_quote($nom).'/',$ville->Ville->getName())) {
+			else if (preg_match('/'.preg_quote($nom).'/i', $ville->getName())) {
 
-				$matching[] = $ville->Ville->getName();
+				$matching[] = $ville;
 			}
 		}
 
@@ -34,9 +34,22 @@ class Villes {
 
 	}
 
+    public function setVilles($array) {
+
+        $this->villes = $array;
+    }
+
+    public function getVilles() {
+
+        return $this->villes;
+    }
+
 	public function addVille($ville) {
 
 		$this->villes[] = $ville;
 	}
+
+
 	
 }
+

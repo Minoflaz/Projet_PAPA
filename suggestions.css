@@ -5,7 +5,11 @@ body
 
 #recherche
 {
+    position: absolute;
+    margin-left: 106px;
+    margin-top: 2px;
     width: 300px;
+    height : 32px;
 }
 
 #suggestions
@@ -15,7 +19,7 @@ body
     padding: 0;
     margin: 0;
     border: 1px solid #aaa;
-    width: 305px;
+    width: 302px;
 }
 
 #suggestions li
