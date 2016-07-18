@@ -185,7 +185,7 @@ $suggestions= $villes->getVillesByName($mot);
 $resultat='';
 foreach($suggestions as $suggestion)
 {
-    $resultat.='<tr><td>'.htmlentities($suggestion->getName()).'</td><td>'.htmlentities($suggestion->getNumber()).'</td></tr>';
+    $resultat.='<tr><td>'.htmlentities($suggestion->getName()).'</td><td id="numero">'.htmlentities($suggestion->getNumber()).'</td></tr>';
 
     //$resultat.='<li>'.htmlentities($suggestion->getName()).'</li>';
 }

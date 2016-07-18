@@ -3,23 +3,40 @@ body
     font-family: sans;
 }
 
+.container
+{
+    margin-left: 0px;
+    margin-right: auto;
+}
+
 #recherche
 {
     position: absolute;
-    margin-left: 20%;
-    margin-top: 2px;
-    width: 300px;
+    margin-left: 1px;
+    margin-top: 1px;
+    width: 200px;
     height : 32px;
 }
 
-#suggestions
+.table.table-hover
+{
+    margin-left: 0px;
+}
+
+#tableau
 {
     position: absolute;
     list-style: none;
-    padding: 0;
-    margin: 0;
-    border: 1px solid #aaa;
+    padding-left: 0px;
+    margin-left: 1px;
+    margin-top: 37px;
+    border: 0px solid #aaa;
     width: 302px;
+}
+
+#numero 
+{
+    padding-left: 40px;
 }
 
 #suggestions li
