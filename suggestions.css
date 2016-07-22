@@ -58,3 +58,11 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
   background-color: white;
 }
+
+table tr {
+    border-bottom: 1px solid black;
+}​
+
+table tr:last-child { 
+    border-bottom: none; 
+}
