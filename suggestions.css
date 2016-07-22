@@ -61,6 +61,8 @@ tr:nth-child(odd) {
 
 table tr {
     border-bottom: 1px solid grey;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }​
 
 table tr:last-child { 
