@@ -60,7 +60,7 @@ tr:nth-child(odd) {
 }
 
 table tr {
-    border-bottom: 0.5px solid grey;
+    border-bottom: 1px solid #CCC;
 }
 
 table tr:last-child { 
