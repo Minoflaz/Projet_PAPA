@@ -143,7 +143,7 @@ $villes->setVilles(array(
     "ECOUEN" => new Ville("ECOUEN",732),
     "GOUSSAINVILLE" => new Ville("GOUSSAINVILLE",732),
     "ROISSY" => new Ville("ROISSY",733),
-    "AEROPORT CDG" => new Ville("700",700),
+    "AEROPORT CDG" => new Ville("AEROPORT CDG",700),
     "CHELLES" => new Ville("CHELLES",734),
     "CHAMPS SUR MARNE" => new Ville("CHAMPS SUR MARNE",741),
     "BRIE COMPTE ROBERT" => new Ville("BRIE COMPTE ROBERT",742),
@@ -180,6 +180,8 @@ $mot=$_GET['mot'];
 // Retenir uniquement les mots qui contiennent $mot
 $suggestions= $villes->getVillesByName($mot);
 
+//Tri par ordre alphabetique des villes
+asort($suggestions);
 
 // Construire le HTML à renvoyer au client
 $resultat='';
