@@ -51,7 +51,7 @@ body
 
 
 tr:nth-child(even) {
-  background-color: gray;
+  background-color: #f5f5f5;
 }
 
 
